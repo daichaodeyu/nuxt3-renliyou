@@ -1,6 +1,3 @@
-# alone-blog
-
-nuxt3+tailwindcss快速搭建个人博客、门户网站、企业官网
 
 ## Setup
 

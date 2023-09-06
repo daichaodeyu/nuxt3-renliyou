@@ -9,7 +9,7 @@
 				</div>
 				<div class="flex items-center">
 					<div class="bar"></div>
-					<p class="text-xs md:text-lg text-slate-400">先锋音讯16年品质保证，值得您信赖的伙伴</p>
+					<p class="text-xs md:text-lg text-slate-400">任礼游音讯16年品质保证，值得您信赖的伙伴</p>
 				</div>
 			</div> -->
 			<h2 style="text-align: center;font-size: 32px;font-weight: bold;color: #12205B;margin-bottom: 3rem;">行业解决方案</h2>

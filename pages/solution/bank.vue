@@ -4,7 +4,7 @@
 			<div style="z-index: 1;position: absolute;top: 0;left: 0;width: 100%;">
 				<div class="al-container">
 					<h2 class="mt-5" style="font-weight: bold;font-size: 30px;color: #fff;">银行解决方案</h2>
-					<p style="color: aqua;margin: 3px 0;">VAA先锋音讯录音系统</p>
+					<p style="color: aqua;margin: 3px 0;">VAA任礼游音讯录音系统</p>
 					<p style="color: aqua;">助力银行提升客户业务办理效率</p>
 					<p class="mb-5 md:w-1/2" style="font-size: 14px;color: #fff;">
 						银行为了提高服务质量和纠纷取证，已经从窗口和大厅，发展到柜台，非现金业务柜台，贵宾室等。工作人员和客户坐在一张桌子上面对面谈话，想把这个对话内容录下来。由于经常发生纠纷而无法查证。如今，这种需求越来越强烈。
@@ -43,7 +43,7 @@
 		</div>
 		<div class="bg-white mt-32">
 			<div class="al-container">
-				<h2 class="section-title mt-20" style="font-size: 2rem;">VAA先锋音讯的解决方案</h2>
+				<h2 class="section-title mt-20" style="font-size: 2rem;">VAA任礼游音讯的解决方案</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32">
 					<div class="basis-1/2">
 						<div class="sec-top">
@@ -68,7 +68,7 @@
 		</div>
 		<div class="mt-32">
 			<div class="al-container">
-				<!-- <h2 class="section-title mt-20" style="font-size: 2rem;">VAA先锋音讯的解决方案</h2> -->
+				<!-- <h2 class="section-title mt-20" style="font-size: 2rem;">VAA任礼游音讯的解决方案</h2> -->
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-20 md:mb-32">
 					<div>
 						<img src="http://cdn.xfrec.com/vaa/vaa-call.png" alt="">

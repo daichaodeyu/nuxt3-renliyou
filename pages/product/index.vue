@@ -33,11 +33,11 @@
 		{id:6,name:'智能工牌'},
 	])
 	const productList = ref([
-		{id:1,title:'先锋产品一box10',image:'http://www.pioneerw.com/html/ipDianHua/3.jpg'},
+		{id:1,title:'任礼游产品一box10',image:'http://www.pioneerw.com/html/ipDianHua/3.jpg'},
 		{id:1,title:'box10',image:'http://www.pioneerw.com/html/ipDianHua/2.jpg'},
 		{id:1,title:'box10',image:'http://www.pioneerw.com/html/ipDianHua/1.jpg'},
 		{id:1,title:'智能双模IP录音',image:'http://www.pioneerw.com/html/ipDianHua/4.jpg'},
-		{id:1,title:'先锋产品一-测试',image:'http://www.pioneerw.com/html/ipDianHua/1.jpg'},
+		{id:1,title:'任礼游产品一-测试',image:'http://www.pioneerw.com/html/ipDianHua/1.jpg'},
 	])
 	const categoryClick = (index)=>{
 		categoryIndex.value = index

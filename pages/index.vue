@@ -16,7 +16,7 @@
 					</div>
 					<div class="flex items-center">
 						<div class="bar"></div>
-						<p class="text-xs md:text-lg text-slate-400">先锋音讯16年品质保证，值得您信赖的伙伴</p>
+						<p class="text-xs md:text-lg text-slate-400">任礼游音讯16年品质保证，值得您信赖的伙伴</p>
 					</div>
 				</div>
 				<div class="md:flex">
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-	const title = ref('VAA先锋音讯企业官网')
+	const title = ref('任我游')
 	const bannerList = ref([{
 			title: '这是一个title',
 			image: 'http://www.pioneerw.com/res/images/banner/213525321.jpg'
@@ -62,7 +62,7 @@
 		},
 	])
 	const newsList = ref([{
-			title: '先锋AI转写一体云录音系统',
+			title: '任礼游AI转写一体云录音系统',
 			date: '2022-11-14'
 		},
 		{
@@ -70,15 +70,15 @@
 			date: '2022-11-12'
 		},
 		{
-			title: '先锋云录音系统助力铁路行业对讲机、售票窗口录音',
+			title: '任礼游云录音系统助力铁路行业对讲机、售票窗口录音',
 			date: '2022-11-12'
 		},
 		{
-			title: '先锋音讯应邀参加  2019第四届上海国际人工智能展',
+			title: '任礼游音讯应邀参加  2019第四届上海国际人工智能展',
 			date: '2022-11-12'
 		},
 		{
-			title: '先锋音讯中标广铁集团 VAA技术融入铁路行业专网',
+			title: '任礼游音讯中标广铁集团 VAA技术融入铁路行业专网',
 			date: '2022-11-12'
 		},
 		{
