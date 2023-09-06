@@ -37,33 +37,36 @@
   <div class="header-white"></div>
   <div class="drawer-main">
     <el-drawer
-	  size="80%"
+      size="80%"
       :append-to-body="true"
       :z-index="99"
       v-model="isCollapse"
       :with-header="false"
     >
-      <el-menu class="menu-main">
-        <el-sub-menu index="1">
-          <template #title>
-            <span>Navigator One</span>
-          </template>
-          <el-menu-item-group title="Group One">
-            <el-menu-item index="1-1">item one</el-menu-item>
-            <el-menu-item index="1-2">item two</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group title="Group Two">
-            <el-menu-item index="1-3">item three</el-menu-item>
-          </el-menu-item-group>
-          <el-sub-menu index="1-4">
-            <template #title>item four</template>
-            <el-menu-item index="1-4-1">item one</el-menu-item>
+      <el-menu class="menu-main" @select="menuSelect" active-text-color="#E65E24">
+        <template v-for="(item, index) in navList" :key="index">
+          <el-sub-menu :index="item.link" v-if="item.children">
+            <template #title>
+              <span>{{ item.name }}</span>
+            </template>
+            <el-menu-item-group>
+              <el-menu-item
+                v-for="(ite, inde) in item.children"
+                :index="ite.link"
+              >
+                <nuxt-link :to="ite.link">{{ ite.name }}</nuxt-link>
+              </el-menu-item>
+            </el-menu-item-group>
           </el-sub-menu>
-        </el-sub-menu>
-        <el-menu-item index="2">
-          <span>Navigator Two</span>
-        </el-menu-item>
+          <el-menu-item :index="item.link" v-else>
+            <nuxt-link :to="item.link">{{ item.name }}</nuxt-link>
+          </el-menu-item>
+        </template>
       </el-menu>
+      <!-- 登录注册 -->
+      <div class="login-btn-bar">
+        <div class="login-btn">登录/注册</div>
+      </div>
     </el-drawer>
   </div>
 </template>
@@ -80,11 +83,7 @@ const navList = ref([
   {
     name: "解决方案",
     link: "#",
-    children: [
-      { name: "银行解决方案", link: "/solution/bank" },
-      { name: "证券解决方案", link: "/solution/bank" },
-      { name: "高铁解决方案", link: "/solution/bank" },
-    ],
+    children: [{ name: "银行解决方案", link: "/solution/bank" }],
   },
   { name: "用户案例", link: "/example" },
   { name: "新闻中心", link: "/news" },
@@ -95,6 +94,10 @@ const dropdownClick = (opt) => {
   console.log("opt", opt);
   Language.value = opt;
 };
+
+const menuSelect = (opt) => {
+  isCollapse.value = false
+}
 </script>
 
 <style lang="scss">
@@ -163,9 +166,39 @@ const dropdownClick = (opt) => {
   width: 100%;
 }
 .el-menu {
-	border: none !important;
+  border: none !important;
 }
 .menu-main {
-	margin-top: $header-height;
+  position: relative;
+  margin-top: $header-height;
+  font-size: 0.9rem;
 }
+.el-menu-item {
+  font-size: 1rem !important;
+}
+.el-drawer__body {
+  padding: 1rem !important;
+}
+.login-btn-bar {
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  height: 6rem;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-btn {
+    border: 0.02rem solid #ff0017;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: #ff0017;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+  }
+}
+
 </style>
